@@ -1,0 +1,266 @@
+/*****BASIC STYLES*****/
+
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+  }
+
+body {
+  margin: 0;
+  text-align: center;
+  font-family: 'Libre Baskerville', serif;
+  background: #3399FF;
+  color: #fff;
+}
+
+p,
+h1,
+h2 {
+ margin: 0; 
+}
+
+p,
+label {
+  letter-spacing: 1px;
+}
+
+header {
+  background: rgba(0,0,0,.1);
+}
+
+header h1 { 
+  padding: 30px 0;
+}
+
+footer {
+  padding-top: 10px;
+  padding-bottom: 20px; 
+}
+
+
+/*****FORM STYLES*****/
+
+form {
+  text-align: left;
+  border-top: 2px solid #fff;
+}
+
+section,
+form  {
+  width: 96%;
+  margin: 0 auto;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+section {
+  padding: 30px 10px;
+  border-bottom: 3px solid #fff;
+}
+
+section h2 {
+  font-size: 1.7em;
+  padding-bottom: 25px;
+}
+
+div {
+  margin-top: 3px; 
+}
+
+fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+textarea,
+button,
+input {
+  box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8);  
+}
+
+label {
+  
+  display: block;
+}
+
+button,
+textarea,
+select,
+.contact-info input {
+  margin: 10px 0; 
+  width: 100%;
+  padding: 20px;
+  border: none;
+  border-radius: 5px;
+  
+}
+
+.contact-info {
+  border-bottom: 2px solid #fff; 
+}
+  
+.form-title {
+  padding: 20px 0;
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+input[name="user_zip"] {
+  width: 40% 
+}
+
+.newsletter label {
+  display: inline-block;
+}
+
+.newsletter p {
+  padding-bottom: 15px; 
+}
+
+label[for="comments"] {
+  padding: 15px 0; 
+}
+
+textarea {
+  height: 200px
+}
+
+button {
+  background: orange;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  font-size: 1.5em;
+  color: #fff;
+}
+
+button:hover {
+  background: rgba(0,0,0,.1); 
+}
+
+select option[value="empty"] {
+  display: none; 
+}
+select {
+  color: #ccc; 
+}
+
+select:focus,
+input:focus, 
+textarea:focus {
+  background: rgba(0,0,0,.1);
+  color: #fff;
+  transition: all .4s ease-in-out;
+}
+
+select:focus {
+  color: #000;
+}
+
+::-webkit-input-placeholder {
+  color: #ccc;
+  text-align: right;
+  font-family: 'Libre Baskerville', serif;
+  font-size: .9em;
+}
+
+
+/*****CHECKBOX AND RADIO BUTTON STYLES*****/
+
+.newsletter label {
+    cursor: pointer;
+    position: relative;
+    padding-left: 30px;
+    padding-top: 10px;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+ display: none; 
+}
+
+.check:before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    left: 0;
+    bottom: 3px;
+    background-color: #fff;
+}
+
+label[for="html-format"]:before,
+label[for="plain-text"]:before {
+  border-radius: 20px; 
+}
+
+label[for="html-news"]:before,
+label[for="css-news"]:before,
+label[for="javascript-news"]:before {
+  border-radius: 3px;
+  
+}
+
+input[type="checkbox"]:checked + label:before, 
+input[type="radio"]:checked + label:before {
+   
+  content: "";
+    width: 16px;
+    height: 16px;
+    border: 2px solid #fff;
+    position: absolute;
+    left: 0;
+    bottom: 3px;
+    background-color: #3399FF;
+    box-shadow: inset 0px 1px 1px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8);
+  
+}
+
+#clear {
+  padding: 25px 0 13px 0;
+  font-size: 1.1em;
+}
+
+
+@media (min-width: 760px) {
+
+section,
+form,
+footer {
+  width: 60%;
+  margin: 0 auto;
+}
+
+section {
+  padding-top: 5%;
+}
+
+footer {
+  padding-bottom: 20%;
+}
+
+.contact-info label {
+  width: 20%;
+  float: left;
+  padding-top: 20px;
+}
+
+select,
+.contact-info input {
+  width: 80%;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+ 
+input[name="user_zip"] {
+  width: 20% 
+}
+
+}
